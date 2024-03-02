@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Portfolio Tailwind</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="bg-cyan-600 text-white border-b-2">
+      <!-- navbar -->
+      <nav
+        class="container mx-auto flex flex-col items-center h-20 justify-around md:h-16 md:flex-row"
+      >
+        <h1 class="text 2-xl text-center">My Portfolio</h1>
+        <ul class="flex">
+          <li class="px-5 text-center uppercase hover:text-indigo-900">
+            <a href="#"></a>Home
+          </li>
+          <li class="px-5 text-center uppercase hover:text-indigo-900">
+            <a href="#"></a>Projects
+          </li>
+          <li class="px-5 text-center uppercase hover:text-indigo-900">
+            <a href="#"></a>Contact
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- heroSection -->
+    <section
+      id="home"
+      style="background: url(/téléchargement.jpg) no-repeat center center/cover"
+      class="h-[400px]"
+    >
+      <div
+        class="container mx-auto flex flex-col items-center text-white justify-center h-full"
+      >
+        <h1 class="text-center text-3xl p-5 font-bold">
+          Welcome To My Portfolio
+        </h1>
+        <p class="text-center text-lg p-5">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+          quaerat ipsam, ab veritatis nihil labore soluta doloribus nam unde
+          molestias!
+        </p>
+      </div>
+    </section>
+    <!-- skills Section -->
+    <section id="project">
+      <div
+        class="container mx-auto flex flex-col items-center text-dark pt-5 md:flex-row md:justify-center"
+      >
+        <h1 class="text-3xl font-bold mb-1 text-cyan-600">
+          DISCOVER MY SKILLS
+        </h1>
+
+        <div class="text-center my-5">
+          <img
+            class="w-1/3 mx-auto md:w-[200px]"
+            src="/html5_logo.webp"
+            alt="html5_logo"
+          />
+          <h3 class="text-lg font-bold mb-1">HTML5 Markup</h3>
+          <p class="px-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+            mollitia autem aliquid, ipsam ex quaerat?
+          </p>
+        </div>
+        <div class="text-center my-5">
+          <img
+            class="w-1/3 mx-auto md:w-[200px]"
+            src="/css3_logo.webp"
+            alt="css3_logo"
+          />
+          <h3 class="text-lg font-bold mb-1">CSS3 Styling</h3>
+          <p class="px-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+            mollitia autem aliquid, ipsam ex quaerat?
+          </p>
+        </div>
+        <div class="text-center my-5">
+          <img
+            class="w-1/3 mx-auto md:w-[200px]"
+            src="/design_logo.webp"
+            alt="desing_logo"
+          />
+          <h3 class="text-lg font-bold mb-1">Graphic Desing</h3>
+          <p class="px-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+            mollitia autem aliquid, ipsam ex quaerat?
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- project Section -->
+    <section>
+      <div
+        class="container mx-auto flex flex-col items-center text-dark p-5 md:flex-row md:justify-center"
+      >
+        <h1 class="text-3xl font-bold mb-1 text-cyan-600">MY PROJECTS</h1>
+        <div class="text-center my-5">
+          <img
+            class="w-full mx-auto md:w-[200px]"
+            src="/watch.jpg"
+            alt="html5_logo"
+          />
+          <h3 class="text-lg font-bold mb-1">Watch Store</h3>
+          <p class="px-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+            mollitia autem aliquid, ipsam ex quaerat?
+          </p>
+        </div>
+        <div class="text-center my-5">
+          <img
+            class="w-full mx-auto md:w-[200px]"
+            src="/resto.jpg"
+            alt="css3_logo"
+          />
+          <h3 class="text-lg font-bold mb-1">Restaurant Menu</h3>
+          <p class="px-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+            mollitia autem aliquid, ipsam ex quaerat?
+          </p>
+        </div>
+        <div class="text-center my-5">
+          <img
+            class="w-full mx-auto md:w-[200px]"
+            src="/téléchargement (1).jpg"
+            alt="desing_logo"
+          />
+          <h3 class="text-lg font-bold mb-1">Travel Agency</h3>
+          <p class="px-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+            mollitia autem aliquid, ipsam ex quaerat?
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- contact -->
+    <div class="p-4">
+      <h2 class="text-2xl text-gray-500 font-semibold mb-2">Contact Us</h2>
+      <form id="contact_form">
+        <div class="mb-4">
+          <label for="message_field" class="block text-sm text-gray-500"
+            >Message:</label
+          >
+          <textarea
+            class="w-full rounded border-gray-400"
+            name="message"
+            id="message_field"
+            rows="6"
+          ></textarea>
+        </div>
+        <div class="flex mb-5">
+          <div class="w-1/2 mr-2">
+            <label for="name_field" class="block text-sm text-gray-500"
+              >Your Name:</label
+            >
+            <input
+              class="rounded border-gray-400 w-full"
+              type="text"
+              name="name"
+              id="name_field"
+            />
+          </div>
+          <div class="w-1/2">
+            <label for="email_field" class="block text-sm text-gray-500"
+              >Email Address:</label
+            >
+            <input
+              class="rounded border-gray-400 w-full"
+              type="email"
+              name="email"
+              id="email_field"
+            />
+          </div>
+        </div>
+        <button
+          type="submit"
+          class="bg-blue-600 py-2 px-4 rounded border-gray-400 shadow-sm text-gray-200 hover:text-white hover:bg-blue-800"
+        >
+          Send
+        </button>
+      </form>
+    </div>
+    <!-- footer -->
+    <footer class="bg-cyan-600 text-white border-b-2 text-center">
+      <p>My Portfolio, Copyright &copy; 2024</p>
+    </footer>
+  </body>
+</html>
